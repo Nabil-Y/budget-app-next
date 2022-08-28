@@ -13,5 +13,6 @@ declare module "styled-components" {
       greyLight: string;
       greyDark: string;
     };
+    toggle?: () => void;
   }
 }

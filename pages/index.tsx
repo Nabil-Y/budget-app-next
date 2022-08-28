@@ -1,7 +1,10 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import { useTheme } from "styled-components";
 
 const Home: NextPage = () => {
+  const theme = useTheme();
+
   return (
     <div>
       <Head>
@@ -17,6 +20,7 @@ const Home: NextPage = () => {
         <p>
           Get started by editing <code>pages/index.tsx</code>
         </p>
+        {theme.toggle && <button onClick={theme.toggle}>Change Theme</button>}
       </main>
     </div>
   );
