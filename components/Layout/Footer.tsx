@@ -1,5 +1,15 @@
 import styled from "styled-components";
 
-const Footer = styled.footer``;
+const Footer = styled.footer`
+  padding: 1rem;
 
-export default Footer;
+  @media screen and (min-width: 768px) {
+    padding: 3rem;
+  }
+`;
+
+const FooterJSX = () => {
+  return <Footer>Footer</Footer>;
+};
+
+export default FooterJSX;
